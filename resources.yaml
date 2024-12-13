@@ -66,7 +66,7 @@ spec:
                 name: data-center-project-secret
                 key: REDIS_URL
           - name: PORT
-            value: "8081"
+            value: "8082"
           - name: DEBUG
             value: "FALSE"
           - name: TOPIC_ID

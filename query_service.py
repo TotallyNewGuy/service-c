@@ -28,12 +28,13 @@ async def get_or_cache(**kwargs):
 
             json_str = json.dumps(grouped_dict)
             await get_redis_client().set(cache_key, json_str, ex=redis_key_retention_time)
-
             print("from Postgresql")
+            grouped_dict["from"] = "Postgresql"
             return grouped_dict
     else:
         print("from Redis")
         json_obj = json.loads(cache_res)
+        json_obj["from"] = "Redis"
         return json_obj
 
 
