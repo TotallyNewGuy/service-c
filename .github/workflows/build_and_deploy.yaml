@@ -31,8 +31,8 @@ jobs:
           GOOGLE_PROJECT: ${{ secrets.PROJECT_ID }}
         run: |
           gcloud auth configure-docker us-central1-docker.pkg.dev
-          docker build -t us-central1-docker.pkg.dev/$GOOGLE_PROJECT/data-center-final-project/service-b:latest .
-          docker push us-central1-docker.pkg.dev/$GOOGLE_PROJECT/data-center-final-project/service-b:latest
+          docker build -t us-central1-docker.pkg.dev/$GOOGLE_PROJECT/data-center-final-project/service-c:latest .
+          docker push us-central1-docker.pkg.dev/$GOOGLE_PROJECT/data-center-final-project/service-c:latest
 
       - name: deploy to GKE
         env:
