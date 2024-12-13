@@ -43,7 +43,7 @@ spec:
       - name: service-c-container
         image: us-central1-docker.pkg.dev/GOOGLE_PROJECT/data-center-final-project/service-c:latest
         ports:
-        - containerPort: 8081
+        - containerPort: 8082
         env:
           - name: GCP_CRED
             valueFrom:
