@@ -1,0 +1,9 @@
+quart
+quart_cors
+python-dotenv
+redis
+sqlalchemy
+asyncpg
+psycopg2-binary
+sqlacodegen-v2
+pytz
