@@ -10,6 +10,7 @@ from query_blueprint import query_blueprint
 
 def create_app():
     load_dotenv()
+    
     app = Quart(__name__)
     # enable CORS
     app = cors(app, allow_origin="*")
